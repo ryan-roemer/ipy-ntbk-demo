@@ -21,4 +21,4 @@ if os.path.abspath(os.getcwd()) != ROOT_DIR:
 @task
 def server():
     """Notebook server."""
-    local("ipython notebook")
+    local("ipython notebook --notebook-dir=\"notebooks\"")
